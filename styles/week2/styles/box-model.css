@@ -1,0 +1,41 @@
+.callout {
+    max-width: 400px;
+    margin: 10px auto;
+    border: 1px solid rgb(0 0 0 / 0.1);
+    padding: 15px;
+    background-color: #247;
+    color: #fff;
+
+}
+
+.callout img {
+    float: right;
+    margin: 0 0 10px 15px;
+    border: 1px solid #000;
+    padding: 3px;
+    background-color: #bbb;
+    width: 15 0px;
+    height: auto;
+
+}
+
+blockquote {
+    margin: 10px 0;
+
+
+}
+
+cite {
+    display: block;
+    /* Moves to a new line */
+    border-top: 1px dotted #fff
+        /* Adds a line above citation */
+        padding-top: 10px;
+    /* Space between quote and cite */
+    text-align: right;
+    /* Aligns citation to the right */
+    font-size: 0.9em;
+    /* Slightly smaller text */
+    color: #666;
+    /* Light gray text */
+}
