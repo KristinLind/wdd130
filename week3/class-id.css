@@ -1,0 +1,14 @@
+.note {
+    font-style: italic;
+    font-weight: bold;
+    color: navy;
+}
+#highlight {
+    text-decoration: underline;
+    background-color: lightyellow;
+ padding: 1rem;
+}
+.editorial {
+ background: rgb(255 0 0 / 0.2);
+    padding: 10px;
+}
