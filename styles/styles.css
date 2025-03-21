@@ -57,36 +57,25 @@ p {
     padding: 0;
 }
 
-/* Ensure the aside section is positioned correctly */
 aside {
-    position: absolute;
+    position: relative;
     bottom: 50px;
-    /* Moves it higher so it does not cover the footer */
     left: 20px;
-    /* Moves it to the lower-left */
     width: 60%;
-    /* Makes the box wider to fit text */
     background-color: rgba(255, 255, 255, 0.9);
-    /* Slight transparency */
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     text-align: left;
-    /* Aligns text properly */
     z-index: 5;
     display: flex;
-    /* Aligns image and text side by side */
     align-items: flex-start;
-    /* Ensures correct positioning */
     gap: 15px;
-    /* Adds spacing between image and text */
 }
 
-/* Center "Utah" perfectly on top of the SLC Temple image */
 aside h2 {
     position: absolute;
-    top: -10px;
-    /* Moves the title slightly higher */
+    top: 10px;
     left: 50%;
     transform: translateX(-50%);
     color: white;
@@ -100,11 +89,13 @@ aside h2 {
 }
 
 aside img {
+    display: block;
+    position: relative;
     width: 120px;
     max-width: 100%;
     border-radius: 8px;
     flex-shrink: 0;
-    margin-top: 20px;
+    margin: 10px auto 0;
 }
 
 aside p {
