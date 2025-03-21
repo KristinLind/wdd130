@@ -5,52 +5,122 @@
 }
 
 :root {
-    --heading-background-color: rgb(247, 0, 255);
-    --heading-text-color: #333;
-    --heading-font: "Montserrat", Helvetica, sans-serif;
+    --forest-green: #505033;
+    --deep-blue: #264969;
+    --sand-beige: #CFCFB4;
+    --sky-blue: #B4CDE4;
+    --heading-font: "Georgia", serif;
+    --body-font: "Roboto", sans-serif;
     --padding: 1rem;
     --border: 1px solid rgb(0 0 0 / 0.1);
 }
 
-nav {
-    background-color: rgb(139, 0, 123);
-    padding: 10px;
+body {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.logo-img {
+    display: block;
+    width: 80px;
+    height: auto;
+    margin: 10px auto;
+    max-width: 100px;
+}
+
+.logo-text {
+    font-family: var(--heading-font);
+    color: var(--forest-green);
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    /* Stacks elements */
+    align-items: center;
+    /* Centers everything */
+    width: 80%;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+
+
+nav a {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+}
+
+nav {
+    width: 100%;
+    background-color: var(--deep-blue);
+    padding: 10px 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav li {
+    margin: 0;
 }
 
 nav a {
-    color: rgb(139, 0, 123);
-    padding: 10px;
     text-decoration: none;
     font-weight: bold;
+    color: var(--sky-blue);
+    padding: 10px;
 }
 
 h1 {
-    color: #4a004a;
-    font-weight: bold;
+    color: var(--forest-green);
+    font-family: var(--heading-font);
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    border-bottom: 3px solid rgb(233, 174, 223);
+    border-bottom: 3px solid solid var(--sky-blue);
     padding-bottom: 10px;
     text-align: center;
     margin-bottom: 15px;
 }
 
 main img {
-    float: right;
+    display: block;
     width: 150px;
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    margin: 0 0 1rem 1rem;
-    box-shadow: 0 0 30px rgb(80, 151, 118);
+    margin: 10px auto;
+    box-shadow: 0 0 30px var(--deep-blue);
 
 }
 
 main {
     max-width: 900px;
+    width: 80%;
     margin: 0 auto;
-    padding: 1rem;
+    padding: 20px;
+    text-align: center;
+}
+
+
+img {
+    display: block;
+    margin: 10px auto;
 }
 
 p {
@@ -58,19 +128,16 @@ p {
 }
 
 aside {
-    position: relative; 
-    width: 80%; 
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    text-align: left;
-    z-index: 5; 
+    width: 80%;
+    max-width: 900px;
+    text-align: center;
     display: flex;
-    align-items: flex-start;
-    gap: 15px;
-    margin-top: 30px;
+    flex-direction: column;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
 }
+
 aside h2 {
     position: absolute;
     bottom: 20px;
@@ -89,11 +156,11 @@ aside h2 {
 aside img {
     display: block;
     position: relative;
-    width: 100px; 
+    width: 100px;
     max-width: 100%;
     border-radius: 8px;
     flex-shrink: 0;
-    margin: 40px auto 0; 
+    margin: 40px auto 0;
 }
 
 aside p {
@@ -102,25 +169,34 @@ aside p {
     flex: 1;
     margin-top: 30px;
 }
+
 footer {
-    position: fixed;
-    bottom: 0;
-    left: 0;
     width: 100%;
-    background-color: #7a4969;
-    color: white;
     text-align: center;
     padding: 10px;
+    background-color: var(--forest-green);
+    color: white;
     font-size: 0.9rem;
 }
+
 
 footer::after {
     content: "Last Modified: March 21, 2025";
     display: block;
     margin-top: 5px;
     font-size: 0.8rem;
-    color: #ddd;
+    color: var(--sky-blue);
 }
+
+.logo {
+    font-family: "Georgia", serif;
+    font-size: 2rem;
+    color: var(--deep-blue);
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    margin-top: 1rem;
+}
+
 
 /* Class Selectors */
 
