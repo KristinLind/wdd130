@@ -63,10 +63,10 @@ aside {
     position: absolute;
     bottom: 20px;
     left: 20px;
-    width: 250px;
+    width: 50%;
     text-align: center;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 10px;
+    padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
@@ -83,28 +83,39 @@ aside h2 {
 }
 
 aside img {
-    width: block;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 200px;
-    border-radius: 10px;
+    display: block;
+    margin: 10px auto;
+    width: 25%;
+    max-width: 150px;
+    border-radius: 8px;
 }
 
 aside p {
     margin-top: 10px;
-    padding: 10px;
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: justify;
+    width: 100%;
 }
 
 footer {
-    margin-top: 1em;
-    border-top: 1px solid #7a4969;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #7a4969;
+    color: white;
     text-align: center;
-    padding: 1rem;
-    color: #333;
+    padding: 10px;
+    font-size: 0.9;
 }
 
+footer:;after {
+    content: "Last Modified: March 20, 2025";
+    display: block;
+    margin-top: 5px;
+    font-size: 0.8rem;
+    color: #ddd;
+}
 
 /* Class Selectors */
 
