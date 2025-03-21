@@ -10,7 +10,7 @@
     --heading-text-color: #333;
     --heading-font: "Montserrat", Helvetica, sans-serif;
     --padding: 1rem;
-    --border: 1px solid rbg(0 0 0 / 0.1);
+    --border: 1px solid rgb(0 0 0 / 0.1);
 
 }
 
@@ -42,7 +42,7 @@ main img {
     height: auto;
     border: 1px solid black;
     padding: 2px;
-    margin-bottom: 0 0 1rem 1rem;
+    margin: 0 0 1rem 1rem;
     box-shadow: 0 0 30px rgb(80, 151, 118);
 
 }
@@ -74,7 +74,7 @@ aside h2 {
 }
 
 aside img {
-    width: 200px;
+    width: 150px;
     height: auto;
     display: block;
     margin: 0 auto 1rem auto;
