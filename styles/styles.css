@@ -115,7 +115,7 @@ footer {
 }
 
 footer::after {
-    content: "Last Modified: March 20, 2025";
+    content: "Last Modified: March 21, 2025";
     display: block;
     margin-top: 5px;
     font-size: 0.8rem;
