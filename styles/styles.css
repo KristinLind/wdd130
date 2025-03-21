@@ -60,9 +60,15 @@ p {
 }
 
 aside {
-    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    width: 250px;
     text-align: center;
-    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 aside h2 {
