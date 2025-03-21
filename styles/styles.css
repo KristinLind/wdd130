@@ -65,7 +65,7 @@ aside {
     left: 20px;
     width: 50%;
     text-align: center;
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 0.9);
     padding: 15px;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
@@ -79,14 +79,18 @@ aside h2 {
     color: white;
     font-size: 1.5rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0,5);
+    padding: 5px 10px;
+    border-radius: 5px;
     z-index: 10;
+    width: 80%;
 }
 
 aside img {
     display: block;
-    margin: 10px auto;
-    width: 25%;
-    max-width: 150px;
+    margin: 40px auto 10px;
+    width: 30%;
+    max-width: 180px;
     border-radius: 8px;
 }
 
@@ -95,6 +99,7 @@ aside p {
     font-size: 1rem;
     text-align: justify;
     width: 100%;
+    padding: 10px;
 }
 
 footer {
