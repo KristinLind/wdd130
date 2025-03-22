@@ -24,21 +24,21 @@ h2 {
 
 .herodiv {
     position: relative;
-    margin: 10px auto;
+    margin: 20px auto;
 
 }
 
 .herodiv img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: center;
 }
 
 .stats {
     position: absolute;
     bottom: 55px;
     left: 25px;
-    background: radial-gradient(#eee, #11aa11);
+    background: radial-gradient(#eee, #4ab3e0);
     border: 1px solid #000;
     padding: 0.65rem;
     box-shadow: 0 0 30px #111;
