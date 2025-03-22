@@ -1,17 +1,19 @@
-/* Global Reset */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Color Scheme from Site Plan */
 :root {
-    --primary-color: #505033; /* Forest Green */
-    --secondary-color: #264969; /* Deep Blue */
-    --accent1-color: #CFCFB4; /* Sand Beige */
-    --accent2-color: #B4CDE4; /* Sky Blue */
+    --primary-color: #B4CDE4;
+    /* Sky Blue */
+    --secondary-color: #264969;
+    /* Deep Blue */
+    --accent1-color: #CFCFB4;
+    /* Sand Beige /*
+    --accent2-color: #B4CDE4; /*Sky Blue /* 
     --accent3-color: #BB1125; /* Dark Red */
+
 
     --heading-font: "Georgia", serif;
     --body-font: "Roboto", sans-serif;
@@ -19,19 +21,37 @@
     --body-text-color: #333;
 }
 
-/* Set Page Width for Easier Design */
 body {
     font-family: var(--body-font);
     background-color: var(--accent1-color);
     color: var(--body-text-color);
-    max-width: 1200px; /* Limit width */
-    margin: 0 auto; /* Center content */
+    max-width: 1200px;
+    margin: 0 auto;
+
 }
 
 /* Headings and Paragraph Styling */
-h1, h2, h3 {
+h1,
+h2,
+h3 {
     font-family: var(--heading-font);
     color: var(--heading-text-color);
+}
+
+.image-row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.image-row img {
+    width: 32%;
+    height: auto;
+    width: 30%;
+    border-radius: 8px;
+    box-shadow: 0, 2px, 6px, rgba(0, 0, 0, 0.15);
 }
 
 p {
@@ -60,7 +80,7 @@ header {
 
 .hero img {
     display: block;
-    width: 100%;
+    width: 30%;
     height: auto;
 }
 
@@ -81,7 +101,8 @@ header {
     bottom: 10%;
     left: 50%;
     transform: translateX(-50%);
-    background: rgba(255, 255, 255, 0.8); /* Light background with opacity */
+    background: rgba(255, 255, 255, 0.8);
+    /* Light background with opacity */
     padding: 1rem;
     border-radius: 8px;
     width: 60%;
@@ -94,4 +115,25 @@ header {
     width: 100px;
     height: auto;
     border-radius: 5px;
+}
+
+footer {
+    position: center;
+    bottom: 0;
+    margin: 1rem;
+    border-top: 1px solid #000;
+    padding: 0.5rem;
+    color: navy;
+    font-weight: 700;
+    font-style: italic;
+}
+
+/* Class Selectors */
+
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
 }
