@@ -9,10 +9,14 @@
     /* Sky Blue */
     --secondary-color: #264969;
     /* Deep Blue */
+
     --accent1-color: #CFCFB4;
-    /* Sand Beige /*
-    --accent2-color: #B4CDE4; /*Sky Blue /* 
-    --accent3-color: #BB1125; /* Dark Red */
+    /* Sand Beige */
+    --accent2-color: #B4CDE4;
+    /* Sky Blue */
+    --accent3-color: #BB1125;
+    /* Dark Red */
+
 
 
     --heading-font: "Georgia", serif;
@@ -30,33 +34,96 @@ body {
 
 }
 
+.feature-section {
+    text-align: center;
+    background-color: var(--accent1-color);
+    padding: 2rem 1rem;
+    border-radius: 8px;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+.feature-section img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.feature-section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.feature-section p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.centered-section {
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
 /* Headings and Paragraph Styling */
 h1,
 h2,
 h3 {
     font-family: var(--heading-font);
     color: var(--heading-text-color);
+    text-align: center;
 }
 
 .image-row {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 1rem;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.image-box {
+    width: 30%;
+    text-align: center;
+}
+
+.image-box img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+}
+
+.site-header {
+    text-align: center;
+    background-color: var(--primary-color);
     padding: 1rem;
 }
 
-.image-row img {
-    width: 32%;
+.logo {
+    width: 150px;
     height: auto;
-    width: 30%;
-    border-radius: 8px;
-    box-shadow: 0, 2px, 6px, rgba(0, 0, 0, 0.15);
+    margin-bottom: 1rem;
 }
 
 p {
     font-size: 1rem;
     line-height: 1.6;
+    text-align: center;
+}
+
+.centered-text h2 {
+    text-align: center;
+}
+
+.centered-text {
+    text-align: center;
+    margin: 2rem auto;
+    max-width: 900px;
+    color: var(--secondary-color);
 }
 
 /* Header Styling */
@@ -67,9 +134,16 @@ header {
     text-align: center;
 }
 
-/* Social Media Image Links - Remove Underline */
-.social-media a {
-    text-decoration: none;
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Hero Section */
@@ -82,6 +156,14 @@ header {
     display: block;
     width: 30%;
     height: auto;
+}
+
+.highlight-message {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: center;
+    margin: 2rem 0;
+    color: var(--secondary-color);
 }
 
 /* Positioning H1 and Article */
@@ -118,7 +200,7 @@ header {
 }
 
 footer {
-    position: center;
+    text-align: center;
     bottom: 0;
     margin: 1rem;
     border-top: 1px solid #000;
@@ -126,6 +208,18 @@ footer {
     color: navy;
     font-weight: 700;
     font-style: italic;
+}
+
+.social-media {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.social-media img {
+    width: 24px;
+    height: 24px;
 }
 
 /* Class Selectors */
