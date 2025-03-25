@@ -40,9 +40,13 @@ main.home-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 2rem;
-    max-width: 100%;
-    margin: 2rem auto;
+    max-width: 840px;
+    margin: 0 auto;
     padding: 1rem;
+}
+.grid class .grid {
+    display: grid;
+    align-items: center;
 }
 
 .left-column {
@@ -53,6 +57,7 @@ main.home-grid {
 }
 
 aside.right-column {
+    position: relative;
     background-color: white;
     padding: 1rem;
     border-radius: 10pz;
