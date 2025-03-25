@@ -1,10 +1,7 @@
 :root {
     --heading-background-color: rgb(67, 138, 181);
-    /* blue */
     --accent-color: rgb(247, 0, 255);
-    /* bright pink */
     --highlight-color: lightseagreen;
-    /* green */
     --background-grey: #879197;
     --text-dark: #00094a;
 }
@@ -25,24 +22,43 @@ header {
 }
 
 nav {
+    background-color: rgba(141, 221, 222, 0.75);
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
     gap: 3rem;
     margin-top: 1rem;
 }
+header, footer {
+    max-width: 840px;
+    margin: 0 auto;
+}
 
 nav a {
+    display: block;
+    padding: 0.5rem;
     color: white;
+    font-size: 1.2rem;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 700;
+}
+.grid {
+    display: grid;
+    align-items: center;
 }
 
 main {
-    max-width: 1100px;
-    margin: 0 auto;
+    grid-column: 2/3;
+    margin: 1 rem;
     padding: 2rem;
 }
-
+aside {
+    width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
 .about-me {
     overflow: auto;
     margin-bottom: 2rem;
@@ -91,7 +107,14 @@ main {
     text-decoration: none;
 }
 
-.temple-links-band a:hover {
+.temple-links-band {
+    background-color: var(--heading-background-color);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin: 2rem 0;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
     text-decoration: underline;
 }
 
@@ -99,6 +122,9 @@ main {
     display: flex;
     align-items: flex-start;
     margin-top: 3rem;
+}
+section {
+    margin-bottom: 2rem;
 }
 
 .utah-image {
@@ -142,7 +168,6 @@ main {
     padding: 1rem;
     font-weight: bold;
     width: 100%;
-    /* Full width like the mod date footer */
     box-sizing: border-box;
     margin: 0;
 }
@@ -150,7 +175,6 @@ main {
 
 .mod-date-footer {
     background-color: #e3edf4;
-    /* light background for contrast */
     color: #444;
     text-align: center;
     font-size: 0.85rem;
