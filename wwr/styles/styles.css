@@ -53,7 +53,7 @@ nav a hover {
 }
 
 .hero {
-    background: url('../images/rafting-hero.jpg') no-repeat center center/cover;
+    background: url('../images/rafting-hero.jpg') 
     color: white;
     padding: 4rem 2rem;
     text-align: center;
@@ -78,7 +78,7 @@ h2 {
 }
 
 .wrapper {
-    postion: relative;
+    position: relative;
     width: fit-content;
     margin: auto;
 }
