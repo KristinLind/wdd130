@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 :root {
     --heading-background-color: rgb(247, 0, 255);
     --heading-text-color: #333;
@@ -24,6 +25,7 @@ header {
     padding: 1rem;
     text-align: center;
 }
+
 h1 {
     color: #00094a;
     font-weight: bold;
@@ -53,8 +55,7 @@ nav a hover {
 }
 
 .hero {
-    background: url('../images/rafting-hero.jpg') 
-    color: white;
+    background: url('../images/rafting-hero.jpg') color: white;
     padding: 4rem 2rem;
     text-align: center;
 }
@@ -83,14 +84,19 @@ h2 {
     margin: auto;
 }
 
+.image-row-section h3 {
+    text-align: center;
+    margin-top: 2rem;
+}
+
 .image-row {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 1rem;
+    gap: 2rem;
     padding: 1rem;
     max-width: 1000px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 .image-box {
