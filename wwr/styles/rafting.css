@@ -9,7 +9,6 @@
     /* Sky Blue */
     --secondary-color: #264969;
     /* Deep Blue */
-
     --accent1-color: #CFCFB4;
     /* Sand Beige */
     --accent2-color: #B4CDE4;
@@ -98,15 +97,27 @@ h3 {
 }
 
 .site-header {
+    display: grid;
+    grid-template-areas:
+        "logo" "title" "nav";
+    justify-items: center;
+    gap: 0.5rem;
     text-align: center;
     background-color: var(--primary-color);
     padding: 1rem;
 }
 
-.logo {
-    width: 150px;
-    height: auto;
-    margin-bottom: 1rem;
+.logo-img {
+    grid-area: logo;
+    width: 100px;
+}
+
+.logo-text {
+    grid-area: title;
+    font-family: var(--heading-font);
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--heading-text-color);
 }
 
 p {
@@ -133,17 +144,12 @@ header {
     padding: 1rem;
     text-align: center;
 }
-
-.social-media {
+.site-header nav {
+    grid-area: nav;
     display: flex;
     justify-content: center;
-    gap: 1rem;
-    margin-top: 1rem;
-}
-
-.social-media img {
-    width: 24px;
-    height: 24px;
+    align-items: center;
+    gap: 2rem;
 }
 
 /* Hero Section */
@@ -199,22 +205,26 @@ header {
     border-radius: 5px;
 }
 
-footer {
-    text-align: center;
-    bottom: 0;
-    margin: 1rem;
-    border-top: 1px solid #000;
-    padding: 0.5rem;
-    color: navy;
-    font-weight: 700;
-    font-style: italic;
-}
-
 .social-media {
     display: flex;
     justify-content: center;
     gap: 1rem;
     margin-top: 0.5rem;
+}
+.site-footer {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    font-weight: 700;
+    font-style: italic;
+    border-top: 2px solid #333;
+}
+
+.site-footer p {
+    margin: 0;
 }
 
 .social-media img {
