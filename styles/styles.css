@@ -101,7 +101,7 @@ aside.right-column {
     border-radius: 5px;
 }
 
-.right-column h2 {
+.right-column {
     color: var(--text-dark);
     font-family: "Montserrat", sans-serif;
     font-size: 1.4rem;
