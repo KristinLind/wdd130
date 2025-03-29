@@ -1,9 +1,20 @@
+ /* Class Selectors */
+
 :root {
     --heading-background-color: rgb(67, 138, 181);
     --accent-color: rgb(247, 0, 255);
     --highlight-color: lightseagreen;
     --background-grey: #f0f0f0;
     --text-dark: #00094a;
+}
+/* Universal Selector */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    box-sizing: border-box;
 }
 
 body {
@@ -60,7 +71,7 @@ aside.right-column {
     position: relative;
     background-color: white;
     padding: 1rem;
-    border-radius: 10pz;
+    border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
@@ -127,6 +138,12 @@ aside.right-column {
     text-decoration: none;
     font-weight: bold;
     color: var(--text-dark);
+}
+/* Class Selectors */
+.box {
+    padding: 1rem;
+    background-color: #eee;
+    border-radius: 8px;
 }
 
 footer.main-footer {
