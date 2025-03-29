@@ -24,11 +24,16 @@
     --body-text-color: #333;
 }
 
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
 body {
     font-family: var(--body-font);
     background-color: var(--accent1-color);
     color: var(--body-text-color);
-    max-width: 1200px;
     margin: 0 auto;
 
 }
