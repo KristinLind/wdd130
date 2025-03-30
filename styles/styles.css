@@ -96,7 +96,8 @@ main.home-grid {
 main img {
     float: right;
 }
-.main-profile-img {
+
+.profile-img {
     float: right;
     width: 150px;
     margin-left: 1rem;
@@ -104,7 +105,6 @@ main img {
     border-radius: 10px;
     box-shadow: 0 0 15px var(--highlight-color);
 }
-
 
 .right-column {
     background-color: white;
@@ -167,13 +167,4 @@ footer.mod-date-footer {
 
 .bio-section {
     overflow: auto;
-}
-
-.bio-section img {
-    float: right;
-    width: 150px;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px var(--highlight-color);
 }
