@@ -140,12 +140,6 @@ main img {
     color: var(--text-dark);
 }
 
-.box {
-    padding: 1rem;
-    background-color: #eee;
-    border-radius: 8px;
-}
-
 footer.main-footer {
     background-color: var(--heading-background-color);
     color: white;
