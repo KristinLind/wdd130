@@ -93,6 +93,9 @@ main.home-grid {
     border-radius: 5px;
 }
 
+main img {
+    float: right;
+}
 .main-profile-img {
     float: right;
     width: 150px;
