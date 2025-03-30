@@ -7,13 +7,16 @@
     --background-grey: #f0f0f0;
     --text-dark: #00094a;
 }
+
 /* Universal Selector */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-html, body {
+
+html,
+body {
     box-sizing: border-box;
 }
 
@@ -55,24 +58,13 @@ main.home-grid {
     margin: 0 auto;
     padding: 1rem;
 }
-.grid class .grid {
-    display: grid;
-    align-items: center;
-}
 
-.left-column {
+.left-column h2 {
     background-color: white;
     padding: 1rem;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-aside.right-column {
-    position: relative;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
 }
 
 .utah-image {
@@ -101,10 +93,24 @@ aside.right-column {
     border-radius: 5px;
 }
 
+.right-column .profile-img {
+    float: right;
+    width: 150px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 128, 0, 0.8);
+}
+
+
 .right-column {
-    color: var(--text-dark);
+    background-color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-family: "Montserrat", sans-serif;
-    font-size: 1.4rem;
+    font-size: 1rem;
+    color: var(--text-dark);
 }
 
 .right-column img {
@@ -139,7 +145,7 @@ aside.right-column {
     font-weight: bold;
     color: var(--text-dark);
 }
-/* Class Selectors */
+
 .box {
     padding: 1rem;
     background-color: #eee;
@@ -163,4 +169,17 @@ footer.mod-date-footer {
     padding: 0.25rem;
     margin: 0;
     border-top: 1px solid #ccc;
+}
+
+.bio-section {
+    overflow: auto;
+}
+
+.bio-section img {
+    float: right;
+    width: 150px;
+    margin-left: 1rem;
+    margin-bottom: 0.5rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px var(--highlight_color);
 }
