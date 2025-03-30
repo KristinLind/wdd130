@@ -93,13 +93,13 @@ main.home-grid {
     border-radius: 5px;
 }
 
-.right-column .main-img {
+.main-profile-img {
     float: right;
     width: 150px;
     margin-left: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 128, 0, 0.8);
+    box-shadow: 0 0 15px var(--highlight-color);
 }
 
 
@@ -111,15 +111,6 @@ main.home-grid {
     font-family: "Montserrat", sans-serif;
     font-size: 1rem;
     color: var(--text-dark);
-}
-
-.right-column img {
-    float: right;
-    width: 150px;
-    margin-left: 1rem;
-    margin-bottom: 0.5rem;
-    border-radius: 10px;
-    box-shadow: 0 0 15px var(--highlight-color);
 }
 
 .temple-links {
@@ -181,5 +172,5 @@ footer.mod-date-footer {
     margin-left: 1rem;
     margin-bottom: 0.5rem;
     border-radius: 10px;
-    box-shadow: 0 0 15px var(--highlight_color);
+    box-shadow: 0 0 15px var(--highlight-color);
 }
