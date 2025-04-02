@@ -35,7 +35,19 @@ body {
     background-color: var(--accent1-color);
     color: var(--body-text-color);
     margin: 0 auto;
+}
 
+.adventure {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.history {
+    padding: 2rem;
+    text-align: center;
 }
 
 .feature-section {
@@ -142,13 +154,31 @@ p {
     color: var(--secondary-color);
 }
 
-/* Header Styling */
+.site-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-areas:
+        "logo title"
+        "nav nav";
+    gap: 1rem;
+    padding: 1rem;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.site-header nav {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
 header {
     background-color: var(--primary-color);
     color: var(--accent2-color);
     padding: 1rem;
     text-align: center;
 }
+
 .site-header nav {
     grid-area: nav;
     display: flex;
@@ -159,14 +189,19 @@ header {
 
 /* Hero Section */
 .hero {
-    position: relative;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
     text-align: center;
+    background-color: var(--accent1-color);
 }
 
 .hero img {
-    display: block;
-    width: 30%;
+    width: 100%;
     height: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    margin-bottom: 0.5rem;
 }
 
 .highlight-message {
@@ -177,7 +212,29 @@ header {
     color: var(--secondary-color);
 }
 
-/* Positioning H1 and Article */
+.feature-section {
+    background-color: var(--accent1-color);
+    padding: 3rem;
+    border-radius: 8px;
+    max-width: 1000px;
+    margin: 2rem auto;
+    text-align: center;
+}
+
+.feature-section figcaption {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+    color: var(--secondary-color);
+}
+
+.hero figcaption {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    margin-bottom: 1rem;
+}
+
 .hero h1 {
     position: absolute;
     top: 20%;
@@ -188,7 +245,7 @@ header {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
 }
 
-/* Styling & Positioning the Article */
+
 .hero article {
     position: absolute;
     bottom: 10%;
@@ -201,7 +258,6 @@ header {
     width: 60%;
 }
 
-/* Floats Image Inside Article */
 .hero article img {
     float: right;
     margin-left: 15px;
@@ -216,6 +272,7 @@ header {
     gap: 1rem;
     margin-top: 0.5rem;
 }
+
 .site-footer {
     display: grid;
     grid-template-columns: 1fr auto;
