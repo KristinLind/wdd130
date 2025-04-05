@@ -1,0 +1,86 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem;
+}
+
+header, footer {
+    width: 100%;
+    max-width: 700px;
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+}
+  
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    margin: 1rem 0;
+}
+
+main {
+    background-color: #ce8888;
+    border: 2px solid #264969;
+    border-radius: 8px;
+    padding: 2rem;
+    max-width: 700px;
+    width: 100%;
+    margin: 1rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+  
+form {
+    background-color: #ffffff;
+    border: 3px solid #264969;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    display: grid;
+    gap: 1.5rem;
+}
+  
+  
+.form-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+  
+
+input, textarea, select {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #999;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #264969;
+    color: white;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    width: fit-content;
+}
+  
+button:hover {
+    background-color: #1c3550;
+}
+
+footer {
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
