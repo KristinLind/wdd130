@@ -430,6 +430,13 @@ h1::after {
     max-width: 900px;
 }
 
+.employee-box img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 1rem;
+}
+
 .employee-img {
     flex: 0 0 160px;
     text-align: center;
