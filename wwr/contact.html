@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description"
-        content="Contact Us">
+    <title>Contact Us | Beyond Travel Whitewater Rafting Co.</title>
+    <meta name="description" content="Contact Beyond Travel Whitewater Rafting Co. for trip reservations, questions, or website suggestions.">
     <meta name="author" content="Kristin Lind">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -28,6 +28,7 @@
                 </nav>
     </header>
     <main>
+        <section class="contact-section">
         <div class="contact-info">
         <h1>Contact Us</h1>
         <h2>Send Us a Message</h2>
@@ -43,6 +44,7 @@
               referrerpolicy="no-referrer-when-downgrade">
             </iframe>
           </div>
+          </section>
           
           <section class="employee-profiles">
             <h2>Meet Our Team</h2>
@@ -94,6 +96,24 @@
                 </div>
               </div>
             </div>
+        <section class="contact-form-section">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="username">Name:</label>
+                <input type="text" id="username" name="username" required>
+
+                <p>Purpose of message:</p>
+                <label><input type="radio" name="purpose" value="inquiry" id="inquiry"></label>
+                <label><input type="radio" name="purpose" value="reservation" id="reservation"> Reservation Questions</label>
+                <label><input type="radio" name="purpose" value="suggestion" id="suggestion"> Website Suggestion</label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5"></textarea>
+                <label><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe to the monthly newsletter</label>
+                <button type="submit">Send Message</button>
+
+            </form>
+        </section>
           </section>
                     
   
