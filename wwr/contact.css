@@ -385,7 +385,7 @@ main {
 .map-container iframe {
     display: block;
     border-radius: 8px;
-    margin: 0 auto;
+    margin: 1rem auto;
     box-shadow: 0 0 10px var(--accent3-color);
 }
 
@@ -425,14 +425,6 @@ h1::after {
     margin-bottom: 1rem;
 }
 
-.profile-grid {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    max-width: 900px;
-    margin: 0 auto;
-}
-
 .employee-box {
     display: flex;
     align-items: flex-start;
@@ -441,7 +433,7 @@ h1::after {
     border-radius: 8px;
     box-shadow: 0 0 10px var(--accent3-color);
     border: 1px solid var(--secondary-color);
-    margin: 1.5rem auto;
+    margin: 1rem auto;
     max-width: 900px;
 }
 
@@ -466,7 +458,7 @@ h1::after {
 
 .employee-text {
     flex: 1;
-    margin-left: 2rem;
+    margin-left: 3rem;
     text-align: left;
     font-size: 1rem;
     line-height: 1.5;
