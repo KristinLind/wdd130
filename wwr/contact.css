@@ -21,6 +21,12 @@
     --body-text-color: #333;
 }
 
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
 body {
     font-family: var(--body-font);
     background-color: var(--accent1-color);
@@ -472,6 +478,12 @@ h1::after {
 .employee-text h3 {
     margin-bottom: 0.5rem;
     color: var(--secondary-color);
+}
+
+.parent-container {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .contact-grid {
