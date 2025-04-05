@@ -474,6 +474,23 @@ h1::after {
     color: var(--secondary-color);
 }
 
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr minmax(300px, 900px) 1fr;
+    padding: 2rem 0;
+}
+
+.contact-column {
+    grid-column: 2;
+}
+
+.contact-info,
+.map-container,
+.employee-profiles,
+.contact-form-section {
+    margin-bottom: 2rem;
+}
+
 .contact-form-section {
     max-width: 700px;
     margin: 2rem auto;
