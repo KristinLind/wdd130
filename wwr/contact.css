@@ -21,17 +21,17 @@
     --body-text-color: #333;
 }
 
-html, body {
+.wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-body {
-    font-family: var(--body-font);
-    background-color: var(--accent1-color);
-    color: var(--body-text-color);
-    margin: 0 auto;
 }
 
 .site-header {
@@ -92,12 +92,6 @@ body {
     margin: 0 auto;
 }
 
-main {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 2rem;
-}
-
 .contact-section {
     max-width: 900px;
     margin: 0 auto;
@@ -147,25 +141,14 @@ h1::after {
     margin-bottom: 1rem;
 }
 
-.employee-box {
-    display: flex;
-    align-items: flex-start;
-    background-color: white;
-    padding: 1rem;
-    border-radius: 8px;
-    box-shadow: 0 0 10px var(--accent3-color);
-    border: 1px solid var(--secondary-color);
-    margin: 1rem auto;
-    max-width: 900px;
-}
-
 .employee-img {
-    flex: 0 0 160px;
+    flex: 0 0 120px;
     text-align: center;
+    margin-right: 1.5rem;
 }
 
 .employee-img img {
-    width: 150px;
+    width: 120px;
     height: auto;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--accent3-color);
@@ -179,15 +162,7 @@ h1::after {
 }
 
 .employee-text {
-    flex: 1;
-    margin-left: 3rem;
-    text-align: left;
-    font-size: 1rem;
-    line-height: 1.5;
-}
-
-.employee-text {
-    flex: 1;
+    flex-grow: 1;
     text-align: left;
 }
 
@@ -202,11 +177,40 @@ h1::after {
     padding: 0;
 }
 
-.contact-grid {
+.main.contact-grid {
     display: grid;
     grid-template-columns: 1fr minmax(300px, 900px) 1fr;
-    padding: 2rem 0;
+    padding: 2rem;
     background-color: #f5f5f5;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+main.contact-grid {
+    outline: 3px dashed red;
+}
+
+.contact-section,
+.employee-profiles,
+.contact-form-section {
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px var(--accent3-color);
+    padding: 2rem;
+    margin-bottom: 2rem;
+}
+
+.employee-box {
+    display: flex;
+    align-items: flex-start;
+    background-color: #fff;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    gap: 1rem;
 }
 
 .contact-column {
@@ -214,7 +218,12 @@ h1::after {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+    background-color: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
+
 
 .contact-info,
 .map-container,
@@ -224,8 +233,9 @@ h1::after {
 }
 
 .contact-form-section {
+    width: 100%;
     max-width: 700px;
-    margin: 2rem auto;
+    margin: 0 auto;
     background-color: #fff;
     padding: 2rem;
     border-radius: 8px;
@@ -233,7 +243,7 @@ h1::after {
     color: var(--body-text-color);
 }
 
-.contact-form-section input, 
+.contact-form-section input,
 .contact-form-section textarea {
     width: 100%;
     padding: 0.5rem;
