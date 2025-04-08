@@ -22,23 +22,24 @@
 }
 
 .wrapper {
-    max-width: 1000px;
-    margin: 0 auto;
+    margin: 0;
     padding: 2rem;
+    width: 100%;
+    max-width: 100%;
 }
 
+.site-header {
+    display: grid;
+    justify-content: center;
+    background-color: var(--primary-color);
+    padding: 1.5rem 0;
+    border-bottom: 4px solid #333;
+}
 html,
 body {
     margin: 0;
     padding: 0;
     width: 100%;
-}
-
-.site-header {
-    display: grid;
-    background-color: var(--primary-color);
-    padding: 1.5rem 0;
-    text-align: center;
 }
 
 .header-content {
@@ -49,6 +50,7 @@ body {
     gap: 1rem;
     max-width: 1200px;
     margin: 0 auto;
+    text-align: center;
 }
 
 .logo-img {
@@ -90,6 +92,7 @@ body {
     background-color: var(--accent1-color);
     color: var(--body-text-color);
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .contact-section {
@@ -179,10 +182,23 @@ h1::after {
 
 main.contact-grid {
     display: grid;
-    grid-template-columns: 1fr minmax(300px, 900px) 1fr;
-    background-color: #f5f5f5;
+    grid-template-columns: 1fr minmax(300px, 1200px) 1fr;
+    background-color: var(secondary-color);
     max-width: 100%;
     margin: 0 auto;
+    padding: 2rem;
+}
+
+.contact-column {
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: var(--accent2-color);
+    border-radius: 8px;
+    padding: 2rem;
+    border: 3px solid var(--secondary-color);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .wrapper {
@@ -193,33 +209,24 @@ main.contact-grid {
 .employee-profiles,
 .contact-form-section {
     width: 100%;
-    background-color: #fff;
+    background-color: var(--accent1-color);
     border-radius: 8px;
     box-shadow: 0 0 10px var(--accent3-color);
     padding: 2rem;
     margin-bottom: 2rem;
+    border: 2px solid #ccc;
 }
 
 .employee-box {
     display: flex;
     align-items: flex-start;
-    background-color: #fff;
+    background-color: var(--accent1-color);
     padding: 1rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
-    border: 1px solid var(--secondary-color);
+    border: 1px solid var(secondary-color);
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
     gap: 1rem;
-}
-
-.contact-column {
-    grid-column: 2;
-    flex-direction: column;
-    gap: 2rem;
-    background-color: white;
-    border-radius: 8px;
-    padding: 2rem;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .contact-info,
@@ -233,7 +240,7 @@ main.contact-grid {
     width: 100%;
     max-width: 700px;
     margin: 0 auto;
-    background-color: #fff;
+    background-color: var(--accent1-color);
     padding: 2rem;
     border-radius: 8px;
     box-shadow: 0 0 10px var(--accent3-color);
@@ -277,8 +284,9 @@ main.contact-grid {
 
 .site-footer {
     display: grid;
-    grid-template-columns: 1fr auto;
+    grid-template-columns: 2fr auto;
     align-items: center;
+    text-align: center;
     padding: 1rem 2rem;
     background-color: var(--primary-color);
     color: var(--secondary-color);
@@ -296,7 +304,12 @@ main.contact-grid {
     height: 24px;
 }
 
-/* Class Selectors */
+.wireframe-link {
+    grid-column: span 2;
+    justify-self: center;
+    text-align: center;
+    margin-top: 1rem;
+}
 
 .box {
     margin: 1rem;
