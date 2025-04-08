@@ -180,9 +180,8 @@ h1::after {
 main.contact-grid {
     display: grid;
     grid-template-columns: 1fr minmax(300px, 900px) 1fr;
-    padding: 2rem;
     background-color: #f5f5f5;
-    max-width: 1100px;
+    max-width: 100%;
     margin: 0 auto;
 }
 
@@ -214,7 +213,7 @@ main.contact-grid {
 }
 
 .contact-column {
-    display: flex;
+    grid-column: 2;
     flex-direction: column;
     gap: 2rem;
     background-color: white;
