@@ -186,6 +186,10 @@ main.contact-grid {
     margin: 0 auto;
 }
 
+.wrapper {
+    grid-column: 2;
+}
+
 .contact-section,
 .employee-profiles,
 .contact-form-section {
@@ -210,7 +214,6 @@ main.contact-grid {
 }
 
 .contact-column {
-    grid-column: 2;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -219,7 +222,6 @@ main.contact-grid {
     padding: 2rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
 
 .contact-info,
 .map-container,
