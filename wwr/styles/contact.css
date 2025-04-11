@@ -67,11 +67,11 @@ body {
     font-family: var(--heading-font);
     font-size: 1.5rem;
     font-weight: bold;
-    text-align: center;
+    text-align: left;
     color: var(--heading-text-color);
     line-height: 1.2;
     margin: 0;
-    display: inline-block;
+    display: block;
 }
 
 .logo-text::after {
@@ -80,13 +80,16 @@ body {
     width: 100px;
     height: 3px;
     background-color: var(--accent3-color);
-    margin: 0.5rem auto;
+    margin: 0.5rem 0;
     border-radius: 4px;
 }
 
 .nav-box {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 550px;
     background-color: white;
     padding: 0.75rem 1rem;
     border-radius: 12px;
