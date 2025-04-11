@@ -71,7 +71,6 @@ body {
     color: var(--heading-text-color);
     line-height: 1.2;
     margin: 0;
-    display: inline-block;
 }
 
 .logo-text::after {
@@ -95,12 +94,12 @@ body {
 
 .nav-box ul {
     display: flex;
-    flex-wrap: nowrap;
     gap: 1.25rem;
     list-style: none;
     margin: 0;
     padding: 0;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .nav-box li {
