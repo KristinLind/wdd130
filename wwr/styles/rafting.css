@@ -467,6 +467,12 @@ h1 {
     color: rgba(255, 255, 255, 0.8);
 }
 
+.employee-text p {
+    text-align: left;
+    line-height: 1.6;
+    margin-top: 0.5rem;
+}
+
 .parent-container {
     width: 100%;
     margin: 0;
